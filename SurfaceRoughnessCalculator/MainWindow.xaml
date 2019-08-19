@@ -1,0 +1,84 @@
+﻿<Window x:Class="SurfaceRoughnessCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SurfaceRoughnessCalculator"
+        mc:Ignorable="d"
+        Title="Surface Roughness Calculator" Height="739" Width="595.2">
+    <Grid>
+        <Label Content="αₘ = 0.0461 dB/mm" HorizontalAlignment="Center" Margin="228,19,244.8,0" VerticalAlignment="Top" RenderTransformOrigin="-1,0.891" Width="116"/>
+        <Label Content="No. of Points" HorizontalAlignment="Left" Margin="221,53,0,0" VerticalAlignment="Top" Width="88"/>
+        <TextBox Name="NoPoints" Height="26" Margin="309,52,244.8,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="TextBox_TextChanged"/>
+        <Label Content="I1" HorizontalAlignment="Left" Margin="118,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="S1" HorizontalAlignment="Left" Margin="307,95,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI1" HorizontalAlignment="Left" Height="26" Margin="144,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS1" HorizontalAlignment="Left" Height="26" Margin="336,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ultra-Sonic Measurement (x)      = " HorizontalAlignment="Left" Margin="174,649,0,0" VerticalAlignment="Top" Width="191"/>
+        <Label Content="Average Surface Roughness (y)  = " HorizontalAlignment="Left" Margin="174,676,0,0" VerticalAlignment="Top" Width="191"/>
+        <Label Content="I2" HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top"/>
+        <Label Content="S2" HorizontalAlignment="Left" Margin="307,126,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI2" HorizontalAlignment="Left" Height="26" Margin="144,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS2" HorizontalAlignment="Left" Height="26" Margin="336,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I3" HorizontalAlignment="Left" Margin="118,157,0,0" VerticalAlignment="Top"/>
+        <Label Content="S3" HorizontalAlignment="Left" Margin="307,157,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI3" HorizontalAlignment="Left" Height="26" Margin="144,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS3" HorizontalAlignment="Left" Height="26" Margin="336,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I4" HorizontalAlignment="Left" Margin="118,188,0,0" VerticalAlignment="Top"/>
+        <Label Content="S4" HorizontalAlignment="Left" Margin="307,188,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI4" HorizontalAlignment="Left" Height="26" Margin="144,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS4" HorizontalAlignment="Left" Height="26" Margin="336,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I5" HorizontalAlignment="Left" Margin="118,219,0,0" VerticalAlignment="Top"/>
+        <Label Content="S5" HorizontalAlignment="Left" Margin="307,219,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI5" HorizontalAlignment="Left" Height="26" Margin="144,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS5" HorizontalAlignment="Left" Height="26" Margin="336,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I6" HorizontalAlignment="Left" Margin="118,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="S6" HorizontalAlignment="Left" Margin="307,250,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI6" HorizontalAlignment="Left" Height="26" Margin="144,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name ="txtS6" HorizontalAlignment="Left" Height="26" Margin="336,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I7" HorizontalAlignment="Left" Margin="118,281,0,0" VerticalAlignment="Top"/>
+        <Label Content="S7" HorizontalAlignment="Left" Margin="307,281,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI7" HorizontalAlignment="Left" Height="26" Margin="144,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name ="txtS7"  HorizontalAlignment="Left" Height="26" Margin="336,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I8" HorizontalAlignment="Left" Margin="118,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="S8" HorizontalAlignment="Left" Margin="307,312,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI8" HorizontalAlignment="Left" Height="26" Margin="144,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS8" HorizontalAlignment="Left" Height="26" Margin="336,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I9" HorizontalAlignment="Left" Margin="118,343,0,0" VerticalAlignment="Top"/>
+        <Label Content="S9" HorizontalAlignment="Left" Margin="307,343,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI9" HorizontalAlignment="Left" Height="26" Margin="144,343,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS9" HorizontalAlignment="Left" Height="26" Margin="336,343,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I10" HorizontalAlignment="Left" Margin="118,374,0,0" VerticalAlignment="Top"/>
+        <Label Content="S10" HorizontalAlignment="Left" Margin="307,374,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI10" HorizontalAlignment="Left" Height="26" Margin="144,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS10" HorizontalAlignment="Left" Height="26" Margin="336,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I11" HorizontalAlignment="Left" Margin="118,404,0,0" VerticalAlignment="Top"/>
+        <Label Content="S11" HorizontalAlignment="Left" Margin="307,404,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI11" HorizontalAlignment="Left" Height="26" Margin="144,405,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS11" HorizontalAlignment="Left" Height="26" Margin="336,405,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I12" HorizontalAlignment="Left" Margin="118,435,0,0" VerticalAlignment="Top"/>
+        <Label Content="S12" HorizontalAlignment="Left" Margin="307,435,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI12" HorizontalAlignment="Left" Height="26" Margin="144,436,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS12" HorizontalAlignment="Left" Height="26" Margin="336,436,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I13" HorizontalAlignment="Left" Margin="118,466,0,0" VerticalAlignment="Top"/>
+        <Label Content="S13" HorizontalAlignment="Left" Margin="307,466,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI13" HorizontalAlignment="Left" Height="26" Margin="144,466,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS13" HorizontalAlignment="Left" Height="26" Margin="336,466,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I14" HorizontalAlignment="Left" Margin="118,497,0,0" VerticalAlignment="Top"/>
+        <Label Content="S14" HorizontalAlignment="Left" Margin="307,497,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI14" HorizontalAlignment="Left" Height="26" Margin="144,497,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS14" HorizontalAlignment="Left" Height="26" Margin="336,497,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="I15" HorizontalAlignment="Left" Margin="118,528,0,0" VerticalAlignment="Top"/>
+        <Label Content="S15" HorizontalAlignment="Left" Margin="307,528,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI15" HorizontalAlignment="Left" Height="26" Margin="144,529,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS15" HorizontalAlignment="Left" Height="26" Margin="336,529,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="370,676,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="370,649,0,0" VerticalAlignment="Top"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="254,608,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="I16" HorizontalAlignment="Left" Margin="118,559,0,0" VerticalAlignment="Top"/>
+        <Label Content="S16" HorizontalAlignment="Left" Margin="307,559,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtI16" HorizontalAlignment="Left" Height="26" Margin="144,560,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtS16" HorizontalAlignment="Left" Height="26" Margin="336,560,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
