@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:SurfaceRoughnessCalculator"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Image x:Key="1" Name="arrow" Source="arrow.png"></Image>
     </Application.Resources>
 </Application>
